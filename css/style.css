@@ -1,0 +1,209 @@
+/* ROLAGEM SUAVE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO DO SITE */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111827;
+    color: white;
+}
+
+/* MENU */
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    padding: 20px;
+}
+
+/* LINKS DO MENU */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* TEXTO LINKS */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* EFEITO HOVER */
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* SEÇÕES */
+
+section {
+    min-height: 100vh;
+    padding: 120px 40px;
+}
+
+/* TITULOS */
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* PARÁGRAFOS */
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* FOTO */
+
+img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* LISTA */
+
+ul {
+    margin-left: 20px;
+    line-height: 2;
+}
+
+/* PROJETOS */
+
+.projeto {
+    background: #1f2937;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* ANIMAÇÃO PROJETOS */
+
+.projeto:hover {
+    transform: scale(1.03);
+}
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+/* INPUTS */
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* TEXTAREA */
+
+textarea {
+    height: 150px;
+}
+
+/* BOTÃO */
+
+button {
+    padding: 12px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* EFEITO BOTÃO */
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    /* SEÇÕES */
+    section {
+        padding: 90px 20px;
+    }
+
+    /* FORMULÁRIO */
+    form {
+        width: 100%;
+    }
+
+    /* TITULOS */
+    h1 {
+        font-size: 30px;
+    }
+
+    /* FOTO */
+	img {
+	    border-radius: 10px;
+	    margin-bottom: 20px;
+	    max-width: 100%;
+	}
+
+}
+/* LINKS */
+
+a {
+    color: #60a5fa;
+}
+
+a:hover {
+    color: #93c5fd;
+}
+/* RODAPÉ */
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
